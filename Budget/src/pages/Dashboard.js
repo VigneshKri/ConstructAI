@@ -28,6 +28,7 @@ const Dashboard = () => {
 
   useEffect(() => {
     calculateStats();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [projects, expenses]);
 
   const calculateStats = () => {

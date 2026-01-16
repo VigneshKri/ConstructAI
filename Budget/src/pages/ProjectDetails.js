@@ -1,7 +1,7 @@
 import React from 'react';
 import { useParams, useNavigate, Link } from 'react-router-dom';
 import { useBudget } from '../context/BudgetContext';
-import { FiArrowLeft, FiEdit2, FiDollarSign } from 'react-icons/fi';
+import { FiArrowLeft, FiDollarSign } from 'react-icons/fi';
 import { formatCurrency, formatDate, getStatusColor } from '../utils/helpers';
 import './ProjectDetails.css';
 

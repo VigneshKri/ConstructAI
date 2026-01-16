@@ -16,7 +16,7 @@ export const useBudget = () => {
 export const BudgetProvider = ({ children }) => {
   const [projects, setProjects] = useState([]);
   const [expenses, setExpenses] = useState([]);
-  const [loading, setLoading] = useState(false);
+  const [loading] = useState(false);
   const [selectedProject, setSelectedProject] = useState(null);
 
   useEffect(() => {

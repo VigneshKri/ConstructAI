@@ -3,7 +3,7 @@ import { useBudget } from '../context/BudgetContext';
 import { useAuth } from '../context/AuthContext';
 import { FiPlus, FiEdit2, FiTrash2, FiDollarSign, FiX, FiFilter } from 'react-icons/fi';
 import { formatCurrency, formatDate, getStatusColor } from '../utils/helpers';
-import { EXPENSE_TYPES, EXPENSE_CATEGORIES, EXPENSE_STATUS } from '../utils/constants';
+import { EXPENSE_CATEGORIES, EXPENSE_STATUS } from '../utils/constants';
 import toast from 'react-hot-toast';
 import './Expenses.css';
 

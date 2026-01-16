@@ -1,13 +1,12 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
 import { inventoryService } from '../services/inventoryService';
 import { useAuth } from '../context/AuthContext';
 import { useBudget } from '../context/BudgetContext';
 import { 
   FiPackage, FiPlus, FiEdit2, FiTrash2, FiAlertTriangle, 
-  FiSearch, FiFilter, FiDownload 
+  FiSearch, FiDownload 
 } from 'react-icons/fi';
-import { formatCurrency, formatDate, exportToCSV } from '../utils/helpers';
+import { formatCurrency, exportToCSV } from '../utils/helpers';
 import toast from 'react-hot-toast';
 import './Inventory.css';
 
@@ -49,6 +48,7 @@ const Inventory = () => {
 
   useEffect(() => {
     filterItems();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [items, searchQuery, filterCategory, filterProject]);
 
   const loadInventory = () => {

@@ -64,7 +64,7 @@ export const validateEmail = (email) => {
 };
 
 export const validatePhone = (phone) => {
-  const re = /^[\+]?[(]?[0-9]{1,4}[)]?[-\s\.]?[(]?[0-9]{1,4}[)]?[-\s\.]?[0-9]{1,9}$/;
+  const re = /^[+]?[(]?[0-9]{1,4}[)]?[-\s.]?[(]?[0-9]{1,4}[)]?[-\s.]?[0-9]{1,9}$/;
   return re.test(phone);
 };
 

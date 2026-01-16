@@ -6,11 +6,11 @@ import {
   FiAlertTriangle, FiCpu, FiTrendingUp, FiCheckCircle,
   FiAlertCircle, FiTarget, FiActivity 
 } from 'react-icons/fi';
-import { formatCurrency, formatDate } from '../utils/helpers';
+import { formatCurrency } from '../utils/helpers';
 import {
-  LineChart, Line, AreaChart, Area, RadarChart, Radar, PolarGrid,
-  PolarAngleAxis, PolarRadiusAxis, XAxis, YAxis, CartesianGrid,
-  Tooltip, Legend, ResponsiveContainer, PieChart, Pie, Cell
+  AreaChart, Area, PieChart, Pie, Cell,
+  XAxis, YAxis, CartesianGrid,
+  Tooltip, Legend, ResponsiveContainer
 } from 'recharts';
 import './AIInsights.css';
 
@@ -29,6 +29,7 @@ const AIInsights = () => {
 
   useEffect(() => {
     runAnalysis();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [projects, expenses]);
 
   const runAnalysis = () => {
