@@ -1,0 +1,171 @@
+.page-subtitle {
+  color: var(--text-secondary);
+  font-size: 14px;
+  margin-top: 4px;
+}
+
+.project-list,
+.expense-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.project-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+  background: var(--light-color);
+  border-radius: 8px;
+  text-decoration: none;
+  transition: all 0.2s;
+  gap: 20px;
+}
+
+.project-item:hover {
+  background: #e5e7eb;
+  transform: translateX(4px);
+}
+
+.project-info h3 {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 4px;
+}
+
+.project-info p {
+  font-size: 14px;
+  color: var(--text-secondary);
+}
+
+.project-budget {
+  min-width: 200px;
+}
+
+.budget-text {
+  font-size: 14px;
+  color: var(--text-secondary);
+  margin-bottom: 8px;
+  text-align: right;
+}
+
+.budget-text span {
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.progress-bar {
+  height: 8px;
+  background: white;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  transition: width 0.3s ease;
+}
+
+.progress-fill.success {
+  background: var(--secondary-color);
+}
+
+.progress-fill.warning {
+  background: var(--warning-color);
+}
+
+.progress-fill.danger {
+  background: var(--danger-color);
+}
+
+.expense-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+  background: var(--light-color);
+  border-radius: 8px;
+  gap: 20px;
+}
+
+.expense-info {
+  flex: 1;
+}
+
+.expense-info h4 {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 4px;
+}
+
+.expense-info p {
+  font-size: 13px;
+  color: var(--text-secondary);
+}
+
+.expense-details {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.expense-amount {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.expense-date {
+  font-size: 12px;
+  color: var(--text-secondary);
+}
+
+.empty-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 48px 20px;
+  text-align: center;
+}
+
+.empty-icon {
+  font-size: 48px;
+  color: var(--text-secondary);
+  margin-bottom: 16px;
+  opacity: 0.5;
+}
+
+.empty-state p {
+  color: var(--text-secondary);
+  margin-bottom: 16px;
+  font-size: 14px;
+}
+
+@media (max-width: 768px) {
+  .project-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .project-budget {
+    width: 100%;
+  }
+
+  .budget-text {
+    text-align: left;
+  }
+
+  .expense-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .expense-details {
+    width: 100%;
+    justify-content: space-between;
+  }
+}

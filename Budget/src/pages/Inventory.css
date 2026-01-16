@@ -1,0 +1,60 @@
+.inventory-page {
+  padding: 2rem;
+}
+
+.warning-row {
+  background-color: #fff3cd !important;
+}
+
+.danger-row {
+  background-color: #f8d7da !important;
+}
+
+.alert {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+}
+
+.alert-warning {
+  background-color: #fff3cd;
+  border: 1px solid #ffc107;
+  color: #856404;
+}
+
+.alert svg {
+  font-size: 1.5rem;
+  flex-shrink: 0;
+}
+
+.search-box {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: var(--bg-secondary);
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  flex: 1;
+  max-width: 400px;
+}
+
+.search-box input {
+  border: none;
+  background: transparent;
+  outline: none;
+  width: 100%;
+  color: var(--text-primary);
+}
+
+.form-grid .full-width {
+  grid-column: 1 / -1;
+}
+
+@media (max-width: 768px) {
+  .search-box {
+    max-width: 100%;
+  }
+}

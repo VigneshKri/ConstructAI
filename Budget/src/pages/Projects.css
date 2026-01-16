@@ -1,0 +1,124 @@
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 24px;
+}
+
+.project-card {
+  background: white;
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+  overflow: hidden;
+  transition: all 0.2s;
+}
+
+.project-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+}
+
+.project-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.project-card-header h3 {
+  font-size: 18px;
+  color: var(--text-primary);
+  margin-bottom: 8px;
+}
+
+.project-card-body {
+  padding: 20px;
+}
+
+.project-type {
+  font-size: 14px;
+  color: var(--text-secondary);
+  margin-bottom: 8px;
+}
+
+.project-location {
+  font-size: 14px;
+  color: var(--text-secondary);
+  margin-bottom: 12px;
+}
+
+.project-description {
+  font-size: 14px;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin-bottom: 16px;
+}
+
+.project-dates {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 16px;
+  font-size: 13px;
+  color: var(--text-secondary);
+}
+
+.project-budget-info {
+  margin-bottom: 16px;
+}
+
+.budget-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
+  font-size: 14px;
+}
+
+.budget-row span {
+  color: var(--text-secondary);
+}
+
+.budget-row strong {
+  color: var(--text-primary);
+}
+
+.text-danger {
+  color: var(--danger-color) !important;
+}
+
+.text-success {
+  color: var(--secondary-color) !important;
+}
+
+.progress-text {
+  text-align: center;
+  font-size: 12px;
+  color: var(--text-secondary);
+  margin-top: 8px;
+}
+
+.project-card-footer {
+  padding: 16px 20px;
+  background: var(--light-color);
+  border-top: 1px solid var(--border-color);
+}
+
+.project-card-footer .btn {
+  width: 100%;
+  justify-content: center;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+@media (max-width: 768px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+}

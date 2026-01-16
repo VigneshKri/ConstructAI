@@ -1,0 +1,46 @@
+.filters {
+  display: flex;
+  gap: 16px;
+  padding: 20px;
+  background: var(--light-color);
+  border-bottom: 1px solid var(--border-color);
+  flex-wrap: wrap;
+}
+
+.filter-group {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex: 1;
+  min-width: 200px;
+}
+
+.filter-group svg {
+  color: var(--text-secondary);
+  font-size: 18px;
+}
+
+.filter-group .form-select {
+  flex: 1;
+  margin: 0;
+}
+
+.expense-quantity {
+  font-size: 12px;
+  color: var(--text-secondary);
+  margin-top: 4px;
+}
+
+.modal-large {
+  max-width: 800px;
+}
+
+@media (max-width: 768px) {
+  .filters {
+    flex-direction: column;
+  }
+
+  .filter-group {
+    width: 100%;
+  }
+}
